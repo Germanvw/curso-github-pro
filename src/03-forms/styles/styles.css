@@ -24,3 +24,14 @@ span,
 .has-error {
   border: 1px solid red;
 }
+
+.formik-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.formik-item {
+  display: flex;
+  flex-direction: column;
+}
