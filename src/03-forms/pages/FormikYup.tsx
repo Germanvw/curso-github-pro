@@ -8,7 +8,6 @@ export const FormikYup = () => {
   const formik = useFormik({
     initialValues: initialFormikBasic,
     onSubmit: (values) => {
-      console.log(values);
       handleReset(initialFormikBasic);
     },
     validationSchema: Yup.object({

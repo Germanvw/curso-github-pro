@@ -1,0 +1,109 @@
+[
+  {
+    "name": "name",
+    "type": "text",
+    "placeholder": "Your Name...",
+    "label": "Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Required"
+      },
+      {
+        "type": "min",
+        "message": "Must be at least 3 characters",
+        "length": 3
+      },
+      {
+        "type": "max",
+        "message": "Must be less than 15 characters",
+        "length": 15
+      }
+    ]
+  },
+  {
+    "name": "email",
+    "type": "email",
+    "placeholder": "Your Email...",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Required"
+      },
+      {
+        "type": "email",
+        "message": "Must be a valid email"
+      }
+    ]
+  },
+  {
+    "name": "password",
+    "type": "password",
+    "placeholder": "******",
+    "label": "Password",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Required"
+      },
+      {
+        "type": "min",
+        "message": "Must be at least 6 characters",
+        "length": 6
+      },
+      {
+        "type": "max",
+        "message": "Must be less than 15 characters",
+        "length": 15
+      }
+    ]
+  },
+  {
+    "name": "passwordConfirm",
+    "type": "password",
+    "placeholder": "******",
+    "label": "Password Confirmation",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Required"
+      },
+      {
+        "type": "min",
+        "message": "Must be at least 6 characters",
+        "length": 6
+      },
+      {
+        "type": "max",
+        "message": "Must be less than 15 characters",
+        "length": 15
+      },
+      {
+        "type": "match",
+        "message": "Passwords must match"
+      }
+    ]
+  },
+  {
+    "name": "ocupation",
+    "type": "select",
+    "label": "Ocupation",
+    "value": "",
+    "options": [
+      { "id": 1, "label": "Student" },
+      { "id": 2, "label": "Teacher" },
+      { "id": 3, "label": "Other" }
+    ]
+  },
+  {
+    "name": "terms",
+    "type": "checkbox",
+    "label": "Terms & Conditions",
+    "value": false
+  }
+]

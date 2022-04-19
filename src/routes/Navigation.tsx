@@ -15,6 +15,7 @@ import {
   FormikComponents,
   FormikAbstractation,
 } from "../03-forms/pages";
+import { DynamicForm } from "../03-forms/pages/DynamicForm";
 
 export const Navigation = () => {
   return (
@@ -31,6 +32,11 @@ export const Navigation = () => {
             <li>
               <NavLink to="/about" activeClassName="nav-active" exact>
                 About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/dynamicform" activeClassName="nav-active" exact>
+                Dynamic Form
               </NavLink>
             </li>
             <li>
@@ -84,6 +90,9 @@ export const Navigation = () => {
           </Route>
           <Route path="/users">
             <h1>Users</h1>
+          </Route>
+          <Route path="/dynamicform">
+            <DynamicForm />
           </Route>
           <Route path="/register">
             <Register />
